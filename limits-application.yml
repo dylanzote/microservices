@@ -1,0 +1,8 @@
+limits-service:
+  minimum: 1
+  maximum: 1000
+spring:
+  config:
+    import: optional:configserver:http://localhost:8081/
+  application:
+    name: client-service
